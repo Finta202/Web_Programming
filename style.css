@@ -1,0 +1,167 @@
+/* Opći stilovi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* ========================= */
+/* NAVIGACIJA (HOVER MENU) */
+/* ========================= */
+
+.nav {
+    position: relative;
+}
+
+/* gumb */
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1001;
+}
+
+/* meni (skriven) */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    position: fixed;
+    left: 0;
+    top: 50px;
+
+    width: 200px;
+    background: #444;
+
+    display: none;
+}
+
+/* hover */
+.nav:hover .menu {
+    display: block;
+}
+
+/* linkovi */
+.menu li a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+.menu li a:hover {
+    background: #666;
+}
+
+/* ========================= */
+/* TABLICA */
+/* ========================= */
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+}
+
+th {
+    background: #0f1f2a;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* ========================= */
+/* SLike */
+/* ========================= */
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+}
+
+/* ========================= */
+/* SEKCIJE */
+/* ========================= */
+
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================= */
+/* ARTICLE */
+/* ========================= */
+
+article {
+    padding: 40px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #e3e3e3;
+    border-radius: 10px;
+}
+
+/* ========================= */
+/* ASIDE */
+/* ========================= */
+
+aside {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 300px;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+}
