@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tag za SEO: opis stranice galerije -->
+    <meta name="description" content="Galerija stiliziranih slika s prikazom uvećane slike bez JavaScripta.">
+    
+    <title>Filmovi - Galerija slika</title>
+    <link rel="stylesheet" href="style_slike.css">
+</head>
+<body id="top">
+
+    <header>
+        <h1>Galerija filmskih slika</h1>
+    </header>
+
+    <nav aria-label="Primarna navigacija" class="nav">
+        <div class="menu-btn" aria-hidden="true">☰ Menu</div>
+        <ul class="menu">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="grafikon.html">Grafikon</a></li>
+            <li><a href="slike.html">Slike</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="galerija" aria-labelledby="galerija-naslov">
+
+            <div class="img-gallery-magnific">
+
+                <figure class="magnific-img">
+                    <a href="#img1">
+                        <img src="https://unsplash.it/300/200?random=1" alt="Filmska scena 1" loading="lazy">
+                    </a>
+                    <figcaption>Slika 1</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img2">
+                        <img src="https://unsplash.it/300/200?random=2" alt="Filmska scena 2" loading="lazy">
+                    </a>
+                    <figcaption>Slika 2</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img3">
+                        <img src="https://unsplash.it/300/200?random=3" alt="Filmska scena 3" loading="lazy">
+                    </a>
+                    <figcaption>Slika 3</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img4">
+                        <img src="https://unsplash.it/300/200?random=4" alt="Filmska scena 4" loading="lazy">
+                    </a>
+                    <figcaption>Slika 4</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img5">
+                        <img src="https://unsplash.it/300/200?random=5" alt="Filmska scena 5" loading="lazy">
+                    </a>
+                    <figcaption>Slika 5</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img6">
+                        <img src="https://unsplash.it/300/200?random=6" alt="Filmska scena 6" loading="lazy">
+                    </a>
+                    <figcaption>Slika 6</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img7">
+                        <img src="https://unsplash.it/300/200?random=7" alt="Filmska scena 7" loading="lazy">
+                    </a>
+                    <figcaption>Slika 7</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img8">
+                        <img src="https://unsplash.it/300/200?random=8" alt="Filmska scena 8" loading="lazy">
+                    </a>
+                    <figcaption>Slika 8</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img9">
+                        <img src="https://unsplash.it/300/200?random=9" alt="Filmska scena 9" loading="lazy">
+                    </a>
+                    <figcaption>Slika 9</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img10">
+                        <img src="https://unsplash.it/300/200?random=10" alt="Filmska scena 10" loading="lazy">
+                    </a>
+                    <figcaption>Slika 10</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img11">
+                        <img src="https://unsplash.it/300/200?random=11" alt="Filmska scena 11" loading="lazy">
+                    </a>
+                    <figcaption>Slika 11</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img12">
+                        <img src="https://unsplash.it/300/200?random=12" alt="Filmska scena 12" loading="lazy">
+                    </a>
+                    <figcaption>Slika 12</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img13">
+                        <img src="https://unsplash.it/300/200?random=13" alt="Filmska scena 13" loading="lazy">
+                    </a>
+                    <figcaption>Slika 13</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img14">
+                        <img src="https://unsplash.it/300/200?random=14" alt="Filmska scena 14" loading="lazy">
+                    </a>
+                    <figcaption>Slika 14</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img15">
+                        <img src="https://unsplash.it/300/200?random=15" alt="Filmska scena 15" loading="lazy">
+                    </a>
+                    <figcaption>Slika 15</figcaption>
+                </figure>
+
+                <figure class="magnific-img">
+                    <a href="#img16">
+                        <img src="https://unsplash.it/300/200?random=16" alt="Filmska scena 16" loading="lazy">
+                    </a>
+                    <figcaption>Slika 16</figcaption>
+                </figure>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- LIGHTBOX bez JavaScripta, pomoću :target -->
+    <div id="img1" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=1" alt="Uvećana filmska scena 1">
+    </div>
+
+    <div id="img2" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=2" alt="Uvećana filmska scena 2">
+    </div>
+
+    <div id="img3" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=3" alt="Uvećana filmska scena 3">
+    </div>
+
+    <div id="img4" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=4" alt="Uvećana filmska scena 4">
+    </div>
+
+    <div id="img5" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=5" alt="Uvećana filmska scena 5">
+    </div>
+
+    <div id="img6" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=6" alt="Uvećana filmska scena 6">
+    </div>
+
+    <div id="img7" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=7" alt="Uvećana filmska scena 7">
+    </div>
+
+    <div id="img8" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=8" alt="Uvećana filmska scena 8">
+    </div>
+
+    <div id="img9" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=9" alt="Uvećana filmska scena 9">
+    </div>
+
+    <div id="img10" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=10" alt="Uvećana filmska scena 10">
+    </div>
+
+    <div id="img11" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=11" alt="Uvećana filmska scena 11">
+    </div>
+
+    <div id="img12" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=12" alt="Uvećana filmska scena 12">
+    </div>
+
+    <div id="img13" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=13" alt="Uvećana filmska scena 13">
+    </div>
+
+    <div id="img14" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=14" alt="Uvećana filmska scena 14">
+    </div>
+
+    <div id="img15" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=15" alt="Uvećana filmska scena 15">
+    </div>
+
+    <div id="img16" class="lightbox">
+        <a href="#top" class="close" aria-label="Zatvori prikaz slike">×</a>
+        <img src="https://unsplash.it/900/?random=16" alt="Uvećana filmska scena 16">
+    </div>
+
+    <footer>
+        <p>&copy; 2025. Web Programiranje. Sva prava pridržana.</p>
+    </footer>
+
+</body>
+</html>

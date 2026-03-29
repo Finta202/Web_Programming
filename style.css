@@ -1,0 +1,213 @@
+/* ========================= */
+/* OPĆI STILOVI */
+/* ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header {
+    background: #007759;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ========================= */
+/* NAVIGACIJA (HOVER MENU) */
+/* ========================= */
+
+.nav {
+    position: relative;
+}
+
+/* gumb */
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1001;
+}
+
+/* meni */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    position: fixed;
+    left: 0;
+    top: 50px;
+
+    width: 200px;
+    background: #444;
+
+    display: none;
+}
+
+/* hover efekt */
+.nav:hover .menu {
+    display: block;
+}
+
+/* linkovi */
+.menu li a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+.menu li a:hover {
+    background: #666;
+}
+
+/* ========================= */
+/* LAYOUT (TABLICA + ASIDE) */
+/* ========================= */
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* lijeva strana */
+.table-wrapper {
+    flex: 3;
+}
+
+/* desna strana */
+.sidebar {
+    flex: 1;
+    max-width: 280px;
+
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+/* slike u aside */
+.aside-img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* hover efekt */
+.aside-img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* ========================= */
+/* TABLICA */
+/* ========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background: #007759;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* hover redak */
+tr:hover {
+    background: #ddd;
+}
+
+/* ========================= */
+/* SEKCIJE */
+/* ========================= */
+
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================= */
+/* ARTICLE */
+/* ========================= */
+
+article {
+    padding: 40px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #e3e3e3;
+    border-radius: 10px;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: #007759;
+    color: white;
+    text-align: center;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        max-width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+}
