@@ -8,7 +8,7 @@ Aplikacija omogućuje pregled popisa filmova i serija, filtriranje podataka prem
 
 ## Funkcionalnosti aplikacije
 
-## – Dohvat i prikaz podataka
+## Dohvat i prikaz podataka
 - Učitavanje podataka iz `movies.csv` datoteke
 - Parsiranje CSV datoteke pomoću PapaParse biblioteke
 - Dinamički prikaz filmova i serija u HTML tablici
