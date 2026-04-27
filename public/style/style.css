@@ -1,17 +1,9 @@
-/* ========================= */
-/* OPĆI STILOVI */
-/* ========================= */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
-
-/* ========================= */
-/* HEADER */
-/* ========================= */
 
 header {
     background: #007759;
@@ -20,15 +12,10 @@ header {
     text-align: center;
 }
 
-/* ========================= */
-/* NAVIGACIJA (HOVER MENU) */
-/* ========================= */
-
 .nav {
     position: relative;
 }
 
-/* gumb */
 .menu-btn {
     position: fixed;
     top: 15px;
@@ -41,28 +28,23 @@ header {
     z-index: 1001;
 }
 
-/* meni */
 .menu {
     list-style: none;
     padding: 0;
     margin: 0;
-
     position: fixed;
     left: 0;
     top: 50px;
-
     width: 200px;
     background: #444;
-
     display: none;
+    z-index: 1000;
 }
 
-/* hover efekt */
 .nav:hover .menu {
     display: block;
 }
 
-/* linkovi */
 .menu li a {
     display: block;
     padding: 12px;
@@ -75,63 +57,109 @@ header {
     background: #666;
 }
 
-/* ========================= */
-/* LAYOUT (TABLICA + ASIDE) */
-/* ========================= */
-
 .content {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 30px;
-
     max-width: 1400px;
     margin: 30px auto;
     padding: 20px;
+    background: white;
+    border-radius: 10px;
 }
 
-/* lijeva strana */
 .table-wrapper {
     flex: 3;
+    overflow-x: auto;
 }
 
-/* desna strana */
+.table-wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .sidebar {
     flex: 1;
     max-width: 280px;
-
     background: white;
     padding: 15px;
     border-radius: 10px;
-
     box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
 }
 
-/* slike u aside */
+.sidebar h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
 .aside-img {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
-
     opacity: 0.9;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* hover efekt */
 .aside-img:hover {
     transform: scale(1.05);
     opacity: 1;
 }
 
-/* ========================= */
-/* TABLICA */
-/* ========================= */
+#filteri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 30px;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#filteri input,
+#filteri select,
+#filteri button {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#filteri button {
+    background: #007759;
+    color: white;
+    cursor: pointer;
+}
+
+#filteri button:hover {
+    background: #005f47;
+}
+
+.godina-box {
+    width: 75px;
+    padding: 6px;
+}
+
+#filteri label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.radio-grupa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.radio-grupa span {
+    font-weight: bold;
+}
 
 table {
     width: 100%;
     border-collapse: collapse;
     background: white;
-
     box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
 }
 
@@ -150,40 +178,61 @@ tr:nth-child(even) {
     background: #f2f2f2;
 }
 
-/* hover redak */
 tr:hover {
     background: #ddd;
 }
 
-/* ========================= */
-/* SEKCIJE */
-/* ========================= */
+.dodaj-btn,
+.ukloni-btn,
+#potvrdi-kosaricu {
+    background: #007759;
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-section {
-    padding: 40px;
-    max-width: 900px;
-    margin: 20px auto;
+.dodaj-btn:hover,
+#potvrdi-kosaricu:hover {
+    background: #005f47;
+}
+
+.ukloni-btn {
+    background: #b00020;
+}
+
+.ukloni-btn:hover {
+    background: #800018;
+}
+
+#kosarica {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+#lista-kosarice {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-kosarice li {
     background: white;
-    border-radius: 10px;
-
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
 }
 
-/* ========================= */
-/* ARTICLE */
-/* ========================= */
-
-article {
-    padding: 40px;
-    max-width: 900px;
-    margin: 20px auto;
-    background: #e3e3e3;
-    border-radius: 10px;
+#poruka-kosarice {
+    font-weight: bold;
+    color: #007759;
 }
-
-/* ========================= */
-/* FOOTER */
-/* ========================= */
 
 footer {
     margin-top: 30px;
@@ -193,12 +242,7 @@ footer {
     text-align: center;
 }
 
-/* ========================= */
-/* RESPONSIVE */
-/* ========================= */
-
 @media (max-width: 768px) {
-
     .content {
         flex-direction: column;
     }
@@ -209,5 +253,10 @@ footer {
 
     .menu {
         width: 100%;
+    }
+
+    .radio-grupa {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
